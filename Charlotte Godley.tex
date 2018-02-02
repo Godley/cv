@@ -1,0 +1,114 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage[
+top    = 0.4in,
+bottom =0.4in,
+left   = 1in,
+right  = 1in]{geometry}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage[T1]{fontenc}
+\usepackage{XCharter}
+ 
+\usepackage[style=authoryear-ibid,backend=biber]{biblatex}
+\definecolor{MyRed}{rgb}{0.6,0,0}
+\sectionfont{\color{MyRed}} 
+\titlespacing{\section}{0pt}{0pt}{0pt}
+
+\pagenumbering{gobble}
+\begin{document}    
+\begin{flushright}
+
+\begin{tabular}{ll}
+   \multicolumn{2}{l}{}\\
+   \Huge \color{MyRed}Charlotte Godley &
+	\begin{tabular}{ll}
+		\multirow{charlottegodley.co.uk}\\
+			me@charlottegodley.co.uk\\
+
+	\end{tabular}
+\end{tabular}
+\end{flushright}
+
+\section*{Experience}
+\begin{flushleft}
+\textbf{Platform Engineer}\\
+\textit{Ocado Technology, February 2017 to present}\\[5pt]
+I currently work on the Ocado Technology developer platform, which consists of a Kubernetes cluster on top of OpenStack infrastructure in each of their generation 2.0 automated warehouses. 
+
+
+\paragraph{}During this time I have produced and and improved continuous integration and delivery scripts written in Python running in GitlabCI - highlights include refactoring our bash scripts which interact with Kubernetes, OpenStack and Ceph APIs into Python due to rising complexity, implementing and emphasising the need for a test driven approach to deployment process scripts to improve feedback loops whilst avoiding interfering with developer workflows, and writing clear but concise documentation to compliment this process. I have heavily leant on a dog fooding approach during this time having maintained our own automation applications which use the CI/CD pipeline and having deployed using previous deployment methods.
+
+
+\paragraph{}Another area I spend a lot of time on is support developers in debugging issues with the cluster. I enjoy debugging and problem solving distributed systems and have been an advocate of finding ways to share the learning with others, predominantly through documentation improvements but also through pairing on problems. I frequently get users coming to me directly (by tagging me on the appropriate knowledge sharing slack channel) due to my approachable manner and communication style - when debugging a user problem I tend to give verbose explanations of what I'm doing and what the probable causes of problems are, so that developers can learn how to provide us with more information in the future in order to reach a resolution faster. Where issues are down to configuration problems I communicate clearly what they're doing wrong, with documentation links to back up what I'm explaining. I am part of a 24/7 support rota where we support the clusters plus an ELK stack, JIRA, Crucible, GitlabCI and a variety of other developer tools. 
+
+
+\paragraph{}I have been a key member in the Monitoring and Alerting working group for the infrastructure department which aims to have a more coordinated approach to monitoring across several teams. During this time I have helped facilitate meetings, kept people to an agenda whilst offering my own and my team's technical experience and advice on effective use of Prometheus, Grafana and Kubernetes. In order to continue this advice outside of these meetings I have organised lab days to get people working on improving monitoring tasks together, where I can provide advice at the time people are working on the issues and get people to focus and make progress toward a better approach to monitoring.
+
+\paragraph{}I have done a lot of technical interviews for my team during this time, and am constantly looking to make the process less stressful for the candidate. I have spent time researching different approaches to this and gathered my team to discuss what they think the key problems in our approach are which has lead to us deciding to use different strategies in content - at the moment we are moving from using whiteboard coding which yielded a lot of stress for limited understanding of how candidates work to pair programming which I believe will make the process feel more collaborative and about how the person thinks, rather than how well they write code in high pressure situations.
+
+\paragraph{} I am always on the look out for opportunities to publicly present my work at meetups, conferences and for internal training sessions. I enjoy public speaking and love to share my story and experience with technology and hear from others in order to figure out what is the best, or close to the best approach to different problems. 
+
+\paragraph{}In addition to these responsibilities I have pushed for a culture of continuous learning within my department through info-dump sessions for the entire department where we discuss a specific technical topic in a question and answer format.\\[10pt]
+
+\textbf{Software Engineer}\\
+\textit{Cambridge Consultants, September 2015 to February 2017}\\[5pt]
+Cambridge Consultants are a product development and technological consultancy. As a Software Engineer in the ICE (Industrial, Consumer and Energy) department I worked on projects ranging from household devices through to defence systems.
+
+\paragraph{}During my time at Cambridge Consultants I worked, primarily, in embedded and web systems. One of the web projects on which I took on a product owner role, as well as development duties, was an HTML5 web app for a touch interface to showcase Cambridge Consultants' capabilities to prospective clients. I used Angular.js as a client-side MVC framework and D3.js to display graphs and charts. The integration of D3 and Angular was a particularly interesting piece of work, which required working with legacy D3 code written for an earlier iteration of the product in order to get it to play nice with Angular. As well as being shown to clients the application is displayed in the main office, so all visitors see the project.
+
+\paragraph{}Due to the sensitive nature of many of the clients of Cambridge Consultants, I am unable to talk in detail about the work I undertook in the embedded space. However, I can say that my embedded work ranged from developing robust and resilient drivers through to programming state machines and applications for real time operating systems. More recently alongside my engineering role I have taken on additional responsibilities around project management including soliciting requirements from clients, delegation of engineering tasks and facilitating collaboration with other teams.\\[10pt]
+
+\textbf{Freelance technical writer}\\
+\textit{July 2014 to July 2015}\\[5pt]
+Alongside my final year studies I was contracted to author blog posts, write tutorials and present in informational videos by Premier Farnell, the leading electronics distributor in the UK. The content was primarily aimed at electronics hobbyists and the video series, Circuits with Charlotte, received a total of over 85,000 views on Premier Farnell's YouTube Channel.
+
+\paragraph{}Developing the content helped me to develop my communication skills, enabling me to discuss highly technical subjects with people of varying skill levels; from beginners through to advanced users. Each project, which consisted of a tutorial and a video, took users from the basics of electronics through to having a working system.
+
+\paragraph{}Projects included creating a \textbf{NFC enabled microcomputer} with a \textbf{Windows Azure ASP.NET backend} to allow people to check in using oystercards at events, and creating a bracelet of LEDs which could be given a custom colour and pattern using an android phone app. \\[10pt]
+
+\textbf{EAT Intern}\\
+\textit{Airbus Operations, August 2013 - July 2014}\\[5pt]
+As part of my degree I completed an industrial placement at Airbus, the largest plane manufacturer in Europe. 
+
+\begin{itemize}
+\item Maintained a python toolkit called EAT (Engineering Application Toolkit) which interfaced with the CAD modelling engine CATIA
+\item Toolkit reduced Aerospace Engineers reliance on the CATIA UI without needing to use the complex C++ API directly, enabling non-software engineers to write their own tools.
+\item Built and improved applications using the toolkit, varying from stress calculations to fuel systems modelling	
+\item Trained replacement interns and helped support work experience students
+\end{itemize}
+
+\section*{Education}
+\begin{tabular}{@{}ll@{}}
+    \multicolumn{2}{l}{}\\
+    \textbf{Degree} &BSc(Hons) in Computer Science with Industrial Experience at the University of Hull  \\
+    \textbf{Grade} &First Class   \\
+    &\\
+\end{tabular}
+
+\section*{Awards}
+\begin{itemize}
+\item Winner of the \textbf{G.B Cooke Prize} for \textbf{Best Final Year Project} at \textbf{The University of Hull}\\
+\small Recipient of the award for best final year project in a year group of 150 students, due to an average percent score of 93 for the dissertation portion of my degree. 
+\item Winner of the \textbf{Bristol Heat of the Institute of Engineering and Technology Present Around the World Competition} \\
+\small Present Around the World is a competition for 18-25 year olds to present on a technical topic for 10 minutes. I presented a talk about improving Computing education with a particular slant towards using creative technologies to improve inclusion and interest.
+\item \normalsize Winner of the \textbf{British Computer Society's Lovelace Colloquium}, Best Second Year \textbf{Poster Award}
+\item Winner of a travel scholarship for the \textbf{Grace Hopper Celebration of Women in Computing 2014}\\
+ \small One of 425 recipients of a total applicant pool of 1,400 to receive full travel,  accommodation and entry financial aid to attend the conference in \textbf{Phoenix, Arizona}, through personal merit and support of STEM education improvement in the UK.
+\item \normalsize Winner of one of five \textbf{Milennials Scholarships} to attend the \textbf{Future of Wireless International Conference 2014}, in Cambridge, UK 
+\end{itemize}
+
+
+\section*{Hobbies and Interests}
+\begin{itemize}
+\item \textbf{Musician with grade 8 in Clarinet, grade 5 in Piano and grade 3 in Saxophone}. Music has greatly influenced my ability to work with others, memory skills and logical thinking. I regularly attend bands and orchestras to keep these skills sharpened and as a form of relaxation. This also influenced my \textit{Final Year Project} during my BSc, which was a \textbf{sheet music organisation system}, in order to make it easier for classical musicians to browse their own libraries and collate it with online resources. 
+
+\item \textbf{STEM Ambassador}. I volunteer as a STEM Ambassador in order to improve computer science education. Previously I have ran workshops using wearables in order to teach programming concepts in a more creative and inclusive way, supported teachers with resources and given talks on computing education at meetups. More recently I have been actively involved in mentoring young people to take part in PiWars, a Raspberry Pi robot building competition hosted in Cambridge, UK every year.
+\end{itemize}
+\end{flushleft}\\[15pt]
+
+\textbf{\textit{References available upon request}}
+\end{document}
